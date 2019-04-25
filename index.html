@@ -34,8 +34,37 @@
                     <label>Name</label>
                     <input type="text" name="title" placeholder="write the name">
                 </div>
-            </form>
+                <div class="form-control">
+                    <label> Text</label>
+                    <textarea name="fulltext" placeholder="write text posts"></textarea>
+                </div>
+                <div class="form-control">
+                    <label>Tips</label>
+                    <select name="type">
+                        <option value="note" selected>Note</option>
+                        <option value="news">News</option>
+                    </select>
+                </div>
 
+                <button class="button-primary button-round button-shadow" type="submit">Create</button>
+            </form>
+            <div class="posts">
+                <div class="panel">
+                    <div class="panel-head">
+                        <p class="panel-title">Name posts</p>
+                        <ul>
+                            <li class="tag tag-blue tag-rounded">News</li>
+                        </ul>
+                    </div>
+                    <div class="panel-body">
+                        <p class="multi-line">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="panel-footer w-panel-footer">
+                        <small>12.12.12</small>
+                    </div>
+                </div>
+            </div>
+            <div id="favorite" class="hide"></div>
         </section>
     </body>
 </html>
